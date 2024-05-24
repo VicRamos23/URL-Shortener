@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Acortada</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>URL Acortada</h1>
+    <p>Tu URL corta es: <a href="{{ url_for('redirect_to_url', short_url=short_url) }}">{{ request.url_root }}{{ short_url }}</a></p>
+</body>
+</html>
